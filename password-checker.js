@@ -43,7 +43,21 @@ class PasswordChecker extends HTMLElement {
       <span>Your password (<small>${this.password}</small>) is <strong>${this.isValid(this.password) ? 'valid 👍' : 'INVALID 👎'}</strong></span>
       ${this.isValid(this.password) ? 
       html`<div>Strength: <progress value=${this.password.length-3} max="5"</progress></div>` : ``}
-      <br/>`
+      <br/>
+      <div>Strength: <progress value="0" max="5"></progress></div>
+      <br/>
+      <div>Strength: <progress value="1" max="5"></progress></div>
+      <br/>
+      <div>Strength: <progress value="2" max="5"></progress></div>
+      <br/>
+      <div>Strength: <progress value="3" max="5"></progress></div>
+      <br/>
+      <div>Strength: <progress value="4" max="5"></progress></div>
+      <br/>
+      <div>Strength: <progress value="5" max="5"></progress></div>
+      <br/>
+      <div>Strength: <progress value="0.5" max="5"></progress></div>
+      `
   }
 }
 
