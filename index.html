@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
-  <div id="main"></div>
-  <script type="module">
-    import {html, render} from 'lit-html.js';
+  <head>
+    <title>Web components made with lit-html</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <script type="module" src="password-checker.js"></script>
+    
+  </head>  
+  <body>
+    <h1>Web components made with lit-html</h1>
+    
+    <password-checker password="L@P0der0s@" tryID='1'></password-checker>
+    <password-checker password="password" tryID='2'></password-checker>
+    
+    <p>
+      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
+    </p>
 
-    // write your code here
-
-  </script>
-</body>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <!--script type="module" src="/script.js" defer></script-->
+  </body>
 </html>

@@ -20,5 +20,8 @@
   "homepage": "https://github.com/juanidiaz/lit-train#readme",
   "devDependencies": {
     "polymer-cli": "^1.9.11"
+  },
+  "dependencies": {
+    "lit-html": "^1.1.2"
   }
 }
